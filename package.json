@@ -15,9 +15,12 @@
     ],
     "rules": {
       "vars-on-top": 0,
-      "no-unused-vars": [2, {
-        "varsIgnorePattern": "setup|draw"
-      }],
+      "no-unused-vars": [
+        2,
+        {
+          "varsIgnorePattern": "setup|draw"
+        }
+      ],
       "no-use-before-define": 0
     },
     "ignores": [
@@ -27,6 +30,7 @@
   "devDependencies": {
     "eslint": "^2.5.1",
     "eslint-config-airbnb": "^6.2.0",
-    "eslint-config-p5js": "^1.0.0"
+    "eslint-config-p5js": "^1.0.0",
+    "eslint-plugin-react": "^4.2.3"
   }
 }
