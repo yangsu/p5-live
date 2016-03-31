@@ -59,14 +59,12 @@ function updateGlobalConstant(node) {
 
 window.addEventListener('patch', function(event) {
   if (event.detail.filename === 'sketch.js') {
-    var changed = parseChanged(event);
-    for (var i = 0; i < changed.length; i++) {
-      var node = changed[i];
+    parseChanged(event).forEach(function(node) {
       if (isSetupFunction(node)) {
         updateSketch();
       } else if (isGlobalConstant(node)) {
         updateGlobalConstant(node);
       }
-    }
+    });
   }
 });
