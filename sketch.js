@@ -1,18 +1,14 @@
-var xspacing;
+var xspacing = 16;    // Distance between each horizontal location
+var theta = 0.0;      // Start angle at 0
+var amplitude = 10.0; // Height of wave
+var period = 20.0;   // How many pixels before the wave repeats
 var w;                // Width of entire wave
-var theta;
-var amplitude;
-var period;
 var dx;               // Value for incrementing x
 var yvalues;  // Using an array to store height values for the wave
 
 function setup() {
-  xspacing = 16;    // Distance between each horizontal location
-  theta = 0.0;      // Start angle at 0
-  amplitude = 10.0; // Height of wave
-  period = 200.0;   // How many pixels before the wave repeats
-  createCanvas(810, 400);
-  w = width + 16;
+  createCanvas(800, 400);
+  w = width + 8;
   dx = (TWO_PI / period) * xspacing;
   yvalues = new Array(floor(w / xspacing));
 }
@@ -26,7 +22,7 @@ function draw() {
 function calcWave() {
   // Increment theta (try different values for
   // 'angular velocity' here
-  theta += 0.02;
+  theta += 0.05;
 
   // For every x value, calculate a y value with sine function
   var x = theta;

@@ -13,8 +13,21 @@
       "airbnb/legacy",
       "p5js"
     ],
+    "globals": {
+      "p5": true,
+      "acorn": true,
+      "escodegen": true,
+      "sketch": true
+    },
     "rules": {
+      "new-cap": 0,
+      "no-eval": 0,
       "vars-on-top": 0,
+      "func-names": 0,
+      "space-before-function-paren": [1, "never"],
+      "no-param-reassign": [
+        2, {"props": false}
+      ],
       "no-unused-vars": [
         2,
         {
