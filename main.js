@@ -19,8 +19,8 @@ function parseChanged(event) {
 }
 
 function updateSketch() {
-  window.p5Instance.remove();
-  window.p5Instance = new p5();
+  p5.instance.remove();
+  p5.instance = new p5();
 }
 
 function hasName(astNode, name) {
