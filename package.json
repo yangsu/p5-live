@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "amok --browser chrome --hot file://$PWD/index.html"
+    "start": "NODE_DEBUG=amok,amok-compiler amok --compiler babel --browser chrome --hot sketches/*"
   },
   "dependencies": {
     "acorn": "^3.0.4",
@@ -10,7 +10,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "airbnb/legacy",
+      "airbnb",
       "p5js"
     ],
     "globals": {
