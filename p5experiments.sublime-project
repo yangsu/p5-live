@@ -1,18 +1,21 @@
 {
-	"folders":
-	[
-		{
-			"file_exclude_patterns":
-			[
-				"*.sublime-workspace"
-			],
-			"path": "."
-		}
-	],
-	"settings":
-	{
-		"FuzzyFilePath":
-		{
-		}
-	}
+  "folders":
+  [
+    {
+      "file_exclude_patterns":
+      [
+        "*.sublime-workspace"
+      ],
+      "folder_exclude_patterns":
+      [
+      ],
+      "path": "."
+    }
+  ],
+  "settings":
+  {
+    "FuzzyFilePath":
+    {
+    }
+  }
 }

@@ -24,9 +24,15 @@
       "no-eval": 0,
       "vars-on-top": 0,
       "func-names": 0,
-      "space-before-function-paren": [1, "never"],
+      "space-before-function-paren": [
+        1,
+        "never"
+      ],
       "no-param-reassign": [
-        2, {"props": false}
+        2,
+        {
+          "props": false
+        }
       ],
       "no-unused-vars": [
         2,
