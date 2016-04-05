@@ -37,7 +37,7 @@
       "no-unused-vars": [
         2,
         {
-          "varsIgnorePattern": "setup|draw"
+          "varsIgnorePattern": "setup|draw|mouseMoved"
         }
       ],
       "no-use-before-define": 0
